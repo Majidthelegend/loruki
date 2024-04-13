@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* grid layout */
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'd c b'
+    'd e b';
+}
+div{
+    border: .5px gray solid;
+}
+:first-child{
+    grid-area: a;
+}
+:nth-child(2){
+    grid-area: b;
+}
+:nth-child(3){
+    grid-area: c;
+}
+:nth-child(4){
+    grid-area: d;
+}
+:nth-child(5){
+    grid-area: e;
+}
+:nth-child(6){
+    grid-area: f;
+}
